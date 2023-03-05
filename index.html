@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Teste Técnico Target</title>
+    </head>
+    <body>
+        <section>
+            <span>Problema 1 - Resultado da varíavel Soma</span>
+            <p>Resposta: <span id="resultado-1"></span></p> 
+        </section>
+
+        <section>
+            <span>Problema 2 - Sequência de Fibonacci</span>
+            <br />
+            <input id="entrada-2" type="number"></input>
+            <button onclick="checarFibonacci()">Checar</button>
+            <p>Resposta: <span id="resultado-2"></span></p> 
+        </section>
+
+        <section>
+            <span>Problema 3 - Lógica</span>
+            <p>Respostas:</p> 
+            <p>A) 1, 3, 5, 7, <span>9</span></p>
+            <p>B) 2, 4, 8, 16, 32, 64, <span>128</span></p>
+            <p>C) 0, 1, 4, 9, 16, 25, 36, <span>49</span></p>
+            <p>D) 4, 16, 36, 64, <span>100</span></p>
+            <p>E) 1, 1, 2, 3, 5, 8, <span>13</span></p>
+            <p>F) 2,10, 12, 16, 17, 18, 19, <span>200</span></p>
+        </section>
+
+        <section>
+            <span>Problema 4 - Carro e Caminhão</span>
+            <p>Resposta: <span>60,9km. Mesma distância</span></p>
+            <p>Explicação:</p>
+            <p>Vamos usar como ponto de referência Ribeirão Preto, para assim poder usar ambos em uma mesma equação. 
+                Com o carro sendo <span>x = velocidade * tempo</span> e o caminhão <span>x = 100km - velocidade * tempo</span>. 
+                Como o caminhão tem 2 pedágios temos que adicionar mais 10 minutos para ele, primeiro calculos o tempo de viagem 
+                sem obstáculo que seria <span>100km/80kmh = 1.25h</span>. ficando 1.35h com os minutos adicionado, tornando sua 
+                velocidade média em <span>70,6kmh</span>. Isolamos o tempo para comparar os dois, fazendo então a equação 
+                <span>110kmh * 100km / 110kmh + 70,6kmh = 60,9km</span>. Por uma questão de lógica básica, visto que ambos 
+                estão indo em direções opostos para o mesmo local em que cada um partiu, ambos vão estão à mesma distância da 
+                cidade de Ribeirão Preto.
+            </p>
+        </section>
+
+        <section>
+            <span>Problema 5 - Inverter uma string</span>
+            <br />
+            <input type="text" oninput="inverterString(value)"></input> - <span style="color: limegreen;" id="resultado-5"></span></span>
+        </section>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
